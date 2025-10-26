@@ -1,13 +1,14 @@
-name: Daily Commit Workflow - 21f3000311@ds.study.iitm.ac.in
+name: Daily Commit by 21f3000311@ds.study.iitm.ac.in
 
 on:
   schedule:
-    # Runs daily at 07:30 UTC (adjust if needed)
+    # Runs daily at 07:30 UTC
     - cron: "30 07 * * *"
   workflow_dispatch:
 
 jobs:
   daily-commit:
+    name: Daily Commit Job (21f3000311@ds.study.iitm.ac.in)
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -20,7 +21,7 @@ jobs:
         run: |
           echo "Run at $(date --utc) by 21f3000311@ds.study.iitm.ac.in" >> daily_log.txt
 
-      - name: Commit and push changes
+      - name: Commit and push changes (21f3000311@ds.study.iitm.ac.in)
         run: |
           git config --local user.email "21f3000311@ds.study.iitm.ac.in"
           git config --local user.name "github-actions[bot]"
