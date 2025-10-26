@@ -1,8 +1,8 @@
-name: Daily Commit by 21f3000311@ds.study.iitm.ac.in
+name: Daily Commit Workflow - 21f3000311@ds.study.iitm.ac.in
 
 on:
   schedule:
-    # Runs daily at 07:30 UTC (you can adjust time if needed)
+    # Runs daily at 07:30 UTC (adjust if needed)
     - cron: "30 07 * * *"
   workflow_dispatch:
 
